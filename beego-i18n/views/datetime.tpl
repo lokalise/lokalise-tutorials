@@ -1,0 +1,1 @@
+{{datetimefmt .currentDateTimeKey "Y-m-d H:i:s"}}

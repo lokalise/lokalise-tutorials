@@ -1,0 +1,8 @@
+{
+    "Welcome to my Gatsby site!": "Bienvenue sur mon site Gatsby !",
+    "My name is Shanika": "Je m'appelle Shanika",
+    "My profession is SSE": "Ma profession est ESS",
+    "message": "Bienvenue!",
+    "date_format_one": " La date actuelle est {{date1}}",
+    "date_format_two": " La date actuelle est {{date2}}"
+}

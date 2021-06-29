@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"name": "SSH FS - mastering_bridge",
+			"uri": "ssh://mastering_bridge/"
+		}
+	],
+	"settings": {}
+}
