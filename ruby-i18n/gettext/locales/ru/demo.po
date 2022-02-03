@@ -1,0 +1,28 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Welcome to our demo app!"
+msgstr "Добро пожаловать в демонстрационное приложение!"
+
+msgid "incoming message"
+msgid_plural "incoming messages"
+msgstr[0] "%{amount} входящее сообщение от %{sender}"
+msgstr[1] "%{amount} входящих сообщения от %{sender}"
+msgstr[2] "%{amount} входящих сообщений от %{sender}"
+
+msgid "male|says"
+msgstr "Он говорит: %{content}"
+msgid "female|says"
+msgstr "Она говорит: %{content}"
+msgid "neutral|says"
+msgstr "Говорит: %{content}"

@@ -1,0 +1,8 @@
+welcome: Welcome to our demo app!
+incoming_messages: !!pl
+  1: You have 1 incoming message
+  n: You have %1 incoming messages
+says: !!gender
+  neutral: The message is %2
+  f: She says %2
+  m: He says %2

@@ -1,0 +1,29 @@
+ru:
+  welcome: Добро пожаловать в демонстрационное приложение!
+  incoming_messages:
+    one: У вас одно новое сообщение от %{sender}
+    few: У вас %{count} новых сообщения от %{sender}
+    many: У вас %{count} новых сообщений от %{sender}
+    other: У вас %{count} новое сообщение от %{sender}
+  says:
+    male: Он говорит %{content}
+    female: Она говорит %{content}
+    neutral: Говорит %{content}
+  time:
+    formats:
+      short: "%d %b %Y %H:%M"
+  date:
+    abbr_month_names:
+    - 
+    - янв.
+    - февр.
+    - марта
+    - апр.
+    - мая
+    - июня
+    - июля
+    - авг.
+    - сент.
+    - окт.
+    - нояб.
+    - дек.

@@ -1,0 +1,27 @@
+en:
+  welcome: Welcome to our demo app!
+  says:
+    male: He says %{content}
+    female: She says %{content}
+    neutral: Says %{content}
+  incoming_messages:
+    one: You have 1 incoming message from %{sender}
+    other: You have %{count} incoming messages from %{sender}
+  time:
+    formats:
+      short: "%Y/%b/%d %H:%M"
+  date:
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec

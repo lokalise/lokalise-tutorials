@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.9)
+    i18n (1.9.1)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  i18n (~> 1.9)
+
+BUNDLED WITH
+   2.3.5

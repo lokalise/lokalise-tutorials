@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    r18n-core (5.0.1)
+    r18n-desktop (5.0.1)
+      r18n-core (~> 5.0)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  r18n-desktop (~> 5.0)
+
+BUNDLED WITH
+   2.3.5
