@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Your Lokalise projects</title>
+</head>
+<body>
+    <h1>Choose a Lokalise project to work with</h1>
+    
+    <ul>
+      {% for project in projects %}
+        <li>{{ project.name }}</li>
+      {% endfor %}
+    </ul>
+</body>
+</html>

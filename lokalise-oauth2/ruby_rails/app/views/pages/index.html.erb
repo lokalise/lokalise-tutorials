@@ -1,0 +1,16 @@
+<% if session[:access_token] %>
+  Access token: <%= session[:access_token] %><br>
+  Refresh token: <%= session[:refresh_token] %><br>
+
+  Your projects:
+
+  <ul>
+    <% @projects.each do |project| %>
+      <li><%= project.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <%= form_tag('/auth/lokalise', method: 'post', data: {turbo: false}) do %>
+    <button type='submit'>Login with Lokalise</button>
+  <% end %>
+<% end %>
