@@ -14,6 +14,6 @@
   },
   "about": {
     "header": "Abous us",
-    "donations": "Donations raised:"
+    "donations": "Donations raised: {donations}"
   }
 }
