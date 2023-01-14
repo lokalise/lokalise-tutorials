@@ -30,7 +30,7 @@
         await Tr.switchLanguage(newLocale)
 
         try {
-          await router.push({ params: { locale: newLocale } })
+          await router.replace({ params: { locale: newLocale } })
         } catch(e) {
           console.log(e)
           router.push("/")
