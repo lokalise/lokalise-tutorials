@@ -16,7 +16,7 @@ import en from "./locales/en.json"
 //       num_visits: "This page hasn't been visited :( | This page has been visited {n} time | This page has been visited {n} times"
 //     },
 //     about: {
-//       header: "Abous us",
+//       header: "About us",
 //       donations: "Donations raised:"
 //     }
 //   },
