@@ -1,0 +1,27 @@
+<h1 i18n="main header|Friendly welcoming message@@welcome">Hello everyone!</h1>
+
+<p>
+  <a i18n i18n-href i18n-title href="/en-US/portfolio" title="My Portfolio">Portfolio</a>
+</p>
+
+<span i18n>
+  {tasksCount, plural, =0 {no tasks} =1 {one task} other {{{tasksCount}} tasks}}
+</span>
+
+<br>
+
+<span i18n>Gender: {genderCode, select, 0 {male} 1 {female} other {other answer}}</span>
+
+<button (click)="male()">♂</button>
+<button (click)="female()">♀</button>
+<button (click)="other()">⚧</button>
+
+<br>
+
+<p>{{today | date:'fullDate'}}</p>
+
+<br>
+
+<ng-container i18n>Copyright 2023</ng-container>
+
+<p>{{ created_by }}</p>

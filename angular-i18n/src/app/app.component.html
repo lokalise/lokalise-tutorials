@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let locale of localesList">
+    <a href="/{{locale.code}}/">
+      {{locale.label}}
+    </a>
+  </li>
+</ul>
+
+<nav>
+  <a class="button" routerLink="/home" i18n>Home</a> |
+  <a class="button" routerLink="/about" i18n>About</a>
+</nav>
+
+<h1 i18n>Main page</h1>
+
+<router-outlet></router-outlet>
