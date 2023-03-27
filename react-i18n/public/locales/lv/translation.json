@@ -1,0 +1,12 @@
+{
+  "main": {
+    "header": "Laipni lūdzam lietotnē!",
+    "new_messages_zero": "Jums nav nevienas jaunas ziņas",
+    "new_messages_one": "Jums ir viena jauna ziņa",
+    "new_messages_other": "Jums ir {{count}} jaunas ziņas",
+    "current_date": "Šodien ir {{date, DATE_LONG}}",
+    "message_contents": "Viņi saka: {{body}}",
+    "message_contents_male": "Viņš saka: {{body}}",
+    "message_contents_female": "Viņa saka: {{body}}"
+  }
+}

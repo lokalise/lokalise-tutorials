@@ -1,0 +1,12 @@
+{
+  "main": {
+    "header": "Welcome to the app!",
+    "new_messages_one": "You have one new message",
+    "new_messages_other": "You have {{count}} new messages",
+    "current_date": "Today is {{date, DATE_LONG}}",
+    "incoming_message": "You have a new message from {{from}}",
+    "message_contents": "They say: {{body}}",
+    "message_contents_male": "He says: {{body}}",
+    "message_contents_female": "She says: {{body}}"
+  }
+}
