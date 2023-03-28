@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 const locales = {
   en: { title: 'English' },
   lv: { title: 'Latviski' },
+  es: { title: 'Español' },
 };
 
 function App() {
@@ -21,15 +22,12 @@ function App() {
         ))}
       </ul>
       <h1>{t('main.header')}</h1>
-      <h2>Hey there!</h2>
 
       <button onClick={() => setMessages(messages + 1)}>+1 message</button>
       <p>
         {t('main.new_messages', { count: messages })}
       </p>
 
-      <p>How are you?</p>
-      
       <p>
         {t('main.current_date', { date: new Date() })}
       </p>
