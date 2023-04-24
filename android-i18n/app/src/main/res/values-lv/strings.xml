@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LokaliseI18n</string>
+    <string name="hello_world">Sveika pasaule!</string>
+    <plurals name="my_cats">
+        <item quantity="zero">Man ir %s kaķu</item>
+        <item quantity="one">Man ir %s kaķis</item>
+        <item quantity="other">Man ir %s kaķi</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LokaliseI18n</string>
+    <string name="hello_world">Hello world!</string>
+    <plurals name="my_cats">
+        <item quantity="one">I have %s cat</item>
+        <item quantity="other">I have %s cats</item>
+    </plurals>
+</resources>
