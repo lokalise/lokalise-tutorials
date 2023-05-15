@@ -1,7 +1,7 @@
 <%= tag.article id: dom_id(feedback) do %>
   <em>
     <%= tag.time l(feedback.created_at, format: :long), datetime: feedback.created_at %><br>
-    <%= t 'global.feedback.posted_by', author: feedback.author %>
+    <%= t 'feedbacks.posted_by', author: feedback.author %>
   </em>
   <p>
     <%= feedback.message %>
