@@ -1,0 +1,25 @@
+en:
+  locales:
+    en: "English"
+    fr: "French"
+  activerecord:
+    attributes:
+      feedback:
+        author: "Your name"
+        message: "Message"
+  static_pages:
+    index:
+      welcome: "Welcome!"
+      services_html: "We provide some fancy services to <em>good people</em>."
+  feedbacks:
+    posted_by: "Posted by %{author}"
+  global:
+    menu:
+      home: "Home" 
+      feedback: "Feedback"
+    forms:
+      submit: Submit
+      messages:
+        errors:
+          one: "One error prohibited this form from being saved:"
+          other: "%{count} errors prohibited this form from being saved:"

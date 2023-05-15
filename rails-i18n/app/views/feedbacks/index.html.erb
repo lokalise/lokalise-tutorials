@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Feedbacks</h1>
+
+<div id="feedbacks">
+  <% @feedbacks.each do |feedback| %>
+    <%= render feedback %>
+    <p>
+      <%= link_to "Show this feedback", feedback %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New feedback", new_feedback_path %>

@@ -1,0 +1,25 @@
+fr:
+  locales:
+    en: "Anglais"
+    fr: "Français"
+  activerecord:
+    attributes:
+      feedback:
+        author: "Votre nom"
+        message: "Message"
+  static_pages:
+    index:
+      welcome: "Bienvenue!"
+      services_html: "Nous fournissons des services sophistiqués aux <em>bonnes personnes</em>."
+  feedbacks:
+    posted_by: "Envoyé par %{author}"
+  global:
+    menu:
+      home: "Page d'accueil" 
+      feedback: "Retour"
+    forms:
+      submit: Soumettre
+      messages:
+        errors:
+          one: "Une erreur a interdit l'enregistrement de ce formulaire :"
+          other: "%{count} erreurs ont empêché la sauvegarde de ce formulaire :"
