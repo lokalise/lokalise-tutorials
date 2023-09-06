@@ -1,0 +1,13 @@
+homepage_welcome: 'Welcome to the app!'
+i_have_apples: >-
+    {apples, plural,
+        =0    {I have no apples.}
+        =1    {I have an apple.}
+        other {I have # apples!}
+    }
+they_say: >-
+    {gender, select,
+        female {Fem {text}}
+        male {He {text}}
+        other {They {text}}
+    }

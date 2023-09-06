@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomepageController!{% endblock %}
+
+{% block body %}
+    <h1>
+        {{ "homepage_welcome"|trans }}
+    </h1>
+
+    {% for i in range(0, 5) %}
+        <p>{{ 'i_have_apples'|trans({"%apples%": i}) }}</p>
+    {% endfor %}
+
+    <p>{{ 'they_say'|trans({"%gender%": 'male', "%text%": "Hello!"}) }}</p>
+
+    {{ form(contact_form) }}
+{% endblock %}

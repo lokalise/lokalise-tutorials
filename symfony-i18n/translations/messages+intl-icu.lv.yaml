@@ -1,0 +1,7 @@
+homepage_welcome: 'Laipni lūdzam lietotnē!'
+i_have_apples: >-
+    {apples, plural,
+        =0    {Man nav ābolu.}
+        =1    {Man ir viens ābols.}
+        other {Man ir # āboli.}
+    }
