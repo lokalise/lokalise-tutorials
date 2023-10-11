@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@intlify/unplugin-vue-i18n": "^0.8.1",
-    "firebase": "^9.15.0",
+    "@intlify/unplugin-vue-i18n": "^1.4.0",
+    "firebase": "^10.4.0",
     "vue": "^3.2.45",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6"
