@@ -1,0 +1,12 @@
+{
+    "@@locale": "fr",
+    "@@last_modified": "2023-10-11T19:56:38+02:00",
+    "appTitle": "Flutter i18n",
+    "welcome": "Bienvenue !",
+    "createdBy": "Tutoriel par {company}",
+    "currentLocale": "La locale actuelle est {locale}",
+    "currentDate": "Aujourd'hui est {date}",
+    "currencyDemo": "Voici un prix de démo : {value}",
+    "pressButton": "Appuyez sur le bouton ci-dessous",
+    "buttonPressed": "{count, plural, one {Appuyé 1 fois} other {Appuyé {count} fois}}"
+}

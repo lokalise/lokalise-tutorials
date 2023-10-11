@@ -1,0 +1,53 @@
+{
+  "@@locale": "en",
+  "appTitle": "Flutter i18n",
+  "@appTitle": {
+    "description": "Main application title"
+  },
+  "welcome": "Welcome!",
+  "createdBy": "Tutorial by {company}",
+  "@createdBy": {
+    "description": "Copyright message",
+    "placeholders": {
+      "company": {
+        "type": "String",
+        "example": "Demo"
+      }
+    }
+  },
+  "currentLocale": "Current locale is {locale}",
+  "currentDate": "Today is {date}",
+  "@currentDate": {
+    "description": "Localized current date",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMMEEEEd"
+      }
+    }
+  },
+  "currencyDemo": "Here's a demo price: {value}",
+  "@currencyDemo": {
+    "description": "A demo showing how to localize currency",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "currency",
+        "optionalParameters": {
+          "decimalDigits": 2
+        }
+      }
+    }
+  },
+  "pressButton": "Press the button below",
+  "buttonPressed": "{count, plural, =0{Has not pressed yet} =1{Pressed 1 time} other{Pressed {count} times}}",
+  "@buttonPressed": {
+    "description": "Shows how many times the button has been pressed (pluralized)",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  }
+}

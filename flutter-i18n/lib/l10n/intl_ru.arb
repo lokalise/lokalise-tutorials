@@ -1,0 +1,11 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Flutter i18n",
+  "welcome": "Добро пожаловать!",
+  "createdBy": "Руководство от {company}",
+  "currentLocale": "Текущая локаль: {locale}",
+  "currentDate": "Сегодня {date}",
+  "currencyDemo": "Демонстрационная цена: {value}",
+  "pressButton": "Нажмите кнопку ниже",
+  "buttonPressed": "{count, plural, =0{Не было нажатий} =1{Нажата 1 раз} few{Нажата {count} раза} other{Нажата {count} раз}}"
+}
