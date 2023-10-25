@@ -1,0 +1,4 @@
+{
+  "Welcome to our website, :Name": "Bienvenue sur notre site, :Name",
+  "{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples": "{0} Il n'y a pas de pommes|{1} Il n'y :form :count pomme|[2,19] Il y :form :count pommes"
+}

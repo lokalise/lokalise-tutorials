@@ -1,0 +1,4 @@
+{
+  "Welcome to our website, :Name": "Добро пожаловать на наш сайт, :Name",
+  "{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples": "{0} Нет яблок|{1} Только :count яблоко|[2,19] :count яблок"
+}
