@@ -1,16 +1,7 @@
-# i18n_demo
+# Translating Flutter apps - tutorial
 
-A new Flutter project.
+Blog post: https://lokalise.com/blog/flutter-i18n/
 
-## Getting Started
+Video tutorial (en) https://www.youtube.com/watch?v=RBLqetMSHMM
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Video tutorial (ru) https://youtu.be/YCU830fNpUY
