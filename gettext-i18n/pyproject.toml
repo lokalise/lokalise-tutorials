@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "gettext-lokalise"
+version = "0.1.0"
+description = ""
+authors = ["bodrovis <bodrovis@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
