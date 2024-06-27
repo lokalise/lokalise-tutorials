@@ -1,0 +1,16 @@
+{
+  "welcome": "Welcome!",
+  "message": "This tutorial is brought to you by {name}",
+  "home": "Home",
+  "about": "About",
+  "aboutTitle": "About Us",
+  "aboutDescription": "This is the about page of our application.",
+  "buttonPressed": "You've pressed the button {count} time | You've pressed the button {count} times",
+  "currentDate": "Current date: {date}",
+  "deadline": "Deadline: {dateTime}",
+  "unitsPrice": "{units} units cost {price}",
+  "meta": {
+    "title": "Welcome to Our Site",
+    "description": "This is the best site ever made for tutorials."
+  }
+}

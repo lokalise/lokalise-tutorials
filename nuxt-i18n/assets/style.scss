@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 40px);
+  text-align: center;
+  // padding-top: 20px; /* Adjusted to add spacing from the top */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+html[dir="rtl"] {
+  .container {
+    direction: rtl;
+  }
+}
+
+.language-switcher,
+.global-menu {
+  margin-bottom: 20px;
+
+  a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+
+    &.router-link-active {
+      font-weight: 800;
+    }
+  }
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}

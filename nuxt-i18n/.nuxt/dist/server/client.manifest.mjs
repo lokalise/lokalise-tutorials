@@ -1,0 +1,1 @@
+export { default } from "file:///E:/lokalise/lokalisenuxti18n/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
