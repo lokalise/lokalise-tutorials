@@ -1,0 +1,31 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ASPLokaliseDemo/1.0.0": {
+        "runtime": {
+          "ASPLokaliseDemo.dll": {}
+        },
+        "resources": {
+          "en-US/ASPLokaliseDemo.resources.dll": {
+            "locale": "en-US"
+          },
+          "fr-FR/ASPLokaliseDemo.resources.dll": {
+            "locale": "fr-FR"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ASPLokaliseDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

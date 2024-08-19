@@ -1,0 +1,17 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Localized App</title>
+</head>
+<body>
+    <h1>@ViewData["greeting"]</h1>
+    <p>@ViewData["currentDate"]</p>
+
+    <p>@ViewData["appleMessage"]</p>
+
+    <p>From IView: @Localizer["welcome_iview"]</p>
+</body>
+</html>
