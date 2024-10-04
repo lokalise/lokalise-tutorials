@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Book Shop
+  body
+    header
+      h1 Book Shop
+      form#lang-switcher(action='/change-language', method='get')
+        select(name='lng', onchange='this.form.submit()')
+          option(value='en', selected=lng === 'en') English
+          option(value='ru', selected=lng === 'ru') Русский
+    block content
+    footer
+      p &copy; 2024 Book Shop

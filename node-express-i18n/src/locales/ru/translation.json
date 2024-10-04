@@ -1,0 +1,10 @@
+{
+  "title": "Главная страница",
+  "message": "Добро пожаловать в книжный магазин!",
+  "welcome_user": "Привет, {{name}}!",
+  "cart_items_zero": "У вас {{count}} товаров в корзине.",
+  "cart_items_one": "У вас {{count}} товар в корзине.",
+  "cart_items_few": "У вас {{count}} товара в корзине.",
+  "cart_items_many": "У вас {{count}} товаров в корзине.",
+  "cart_items_other": "У вас {{count}} товаров в корзине."
+}

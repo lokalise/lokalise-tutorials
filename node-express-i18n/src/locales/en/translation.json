@@ -1,0 +1,8 @@
+{
+  "title": "Homepage",
+  "message": "Welcome to the Book Shop!",
+  "welcome_user": "Hello, {{name}}!",
+  "cart_items_zero": "You have {{count}} items in your cart.",
+  "cart_items_one": "You have {{count}} item in your cart.",
+  "cart_items_other": "You have {{count}} items in your cart."
+}

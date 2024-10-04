@@ -1,0 +1,20 @@
+{
+  "name": "book_shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "i18next": "^23.15.1",
+    "i18next-fs-backend": "^2.3.2",
+    "i18next-http-middleware": "^3.6.0",
+    "pug": "^3.0.3"
+  }
+}
