@@ -1,0 +1,11 @@
+{
+  "hello": "Hello!",
+  "welcome": "Welcome to my app!",
+  "greeting": {
+    "other": "Hello {{.Name}}!"
+  },
+  "dogrescue": {
+    "one": "{{.Name}} rescued {{.Count}} dog.",
+    "other": "{{.Name}} rescued {{.Count}} dogs."
+  }
+}
