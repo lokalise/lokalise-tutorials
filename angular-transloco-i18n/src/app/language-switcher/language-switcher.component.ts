@@ -13,7 +13,7 @@ export class LanguageSwitcherComponent {
   languages: string[];
 
   constructor(private translocoService: TranslocoService, private renderer: Renderer2) {
-    this.currentLang = this.translocoService.getDefaultLang();
+    this.currentLang = this.translocoService.getActiveLang();
     const availableLangs = this.translocoService.getAvailableLangs();
 
     if (Array.isArray(availableLangs) && typeof availableLangs[0] === 'string') {
