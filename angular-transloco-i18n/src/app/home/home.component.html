@@ -1,0 +1,12 @@
+<ng-container *transloco="let t">
+  <h1>{{ t('welcome') }}</h1>
+  <p>{{ t('description', { name: 'Lokalise' }) }}</p>
+
+  <p>{{ today | translocoDate: { dateStyle: 'long' } }}</p>
+
+  <p>{{ price | translocoCurrency }}</p>
+
+  <p>{{ t('itemCount', { count }) }}</p>
+
+  <button (click)="increment()">+1</button>
+</ng-container>

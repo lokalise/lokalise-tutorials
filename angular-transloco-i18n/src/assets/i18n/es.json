@@ -1,0 +1,13 @@
+{
+  "welcome": "¡Bienvenido a Transloco!",
+  "description": "Este es un tutorial de Transloco por {{name}}.",
+  "en": "Inglés",
+  "es": "Español",
+  "ar": "Árabe",
+  "choose_language": "Elige un idioma",
+  "itemCount": "{count, plural, =0 {no hay artículos} one {1 artículo} other {# artículos}}",
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros"
+  }
+}
