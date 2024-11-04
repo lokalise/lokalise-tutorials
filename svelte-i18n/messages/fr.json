@@ -1,0 +1,5 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"welcome": "Bienvenue dans ce tutoriel!",
+	"created_by": "Tutoriel proposé par {company}!"
+}
