@@ -1,31 +1,43 @@
 package routers
 
 import (
-	"BeegoI18n/controllers"
 	"fmt"
+	"log"
+	"strings"
+
 	beego "github.com/beego/beego/v2/server/web"
 	"github.com/beego/i18n"
-	"strings"
+	"lokalisebeego/controllers"
 )
 
+// init initializes routes and loads localization settings
 func init() {
-    beego.Router("/", &controllers.MainController{})
-	beego.Router("/welcome", &controllers.WelcomeController{})
-    beego.Router("/thanks", &controllers.ThanksController{})
-    beego.Router("/datetime", &controllers.DatetimeController{})
-
-	langs, err := beego.AppConfig.String("langs")  // 1
-	if err != nil {  // 2
-		fmt.Println("Failed to load languages from the app.conf")
-		return
+	if err := loadLocalization(); err != nil {
+		log.Fatalf("Localization setup failed: %v", err)
 	}
 
-	langsArr := strings.Split(langs, "|")  // 3
+	// Set up the default route
+	beego.Router("/", &controllers.MainController{})
 
-	for _, lang := range langsArr {  // 4
-		if err := i18n.SetMessage(lang, "conf/"+lang+".ini"); err != nil {  // 5
-			fmt.Println("Failed to set message file for l10n")
-			return
+	beego.Router("/page", &controllers.PageController{})
+}
+
+// loadLocalization loads supported languages and locale files
+func loadLocalization() error {
+	// Get supported languages from app.conf
+	langs, err := beego.AppConfig.String("langs")
+	if err != nil {
+		return fmt.Errorf("failed to load supported languages from app.conf: %w", err)
+	}
+
+	langsArr := strings.Split(langs, "|")
+	for _, lang := range langsArr {
+		// Load locale files for each language
+		if err := i18n.SetMessage(lang, "conf/"+lang+".ini"); err != nil {
+			return fmt.Errorf("failed to load locale file for %s: %w", lang, err)
 		}
 	}
+
+	log.Printf("Supported languages loaded: %v", langsArr)
+	return nil
 }
