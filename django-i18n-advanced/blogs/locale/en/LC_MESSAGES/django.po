@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-16 19:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\blogs\templates\base.html:30
+msgid "Choose your language"
+msgstr ""
+
+#: .\blogs\templates\base.html:40
+msgid "Switch"
+msgstr ""
+
+#: .\blogs\templates\blogs\home.html:7
+msgid "Hello, world!"
+msgstr ""
+
+#: .\blogs\templates\blogs\home.html:10 .\blogs\views.py:12
+#, python-format
+msgid "You have %(count)s message."
+msgid_plural "You have %(count)s messages."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\blogs\templates\blogs\home.html:13
+msgid "The current date and time is:"
+msgstr ""
+
+#: .\blogs\views.py:31
+msgctxt "noun"
+msgid "File"
+msgstr "File (noun)"
+
+#: .\blogs\views.py:35
+msgctxt "verb"
+msgid "File"
+msgstr "File (verb)"

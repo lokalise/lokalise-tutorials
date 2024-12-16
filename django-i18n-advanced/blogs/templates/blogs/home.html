@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h2>{% trans "Hello, world!" %}</h2>
+
+<p>
+  {% blocktrans count message_count as count %}You have {{ count }} message.{% plural %}You have {{ count }} messages.{% endblocktrans %}
+</p>
+
+<p>{% trans "The current date and time is:" %} {{ current_time|date:"TIME_FORMAT" }}</p>
+{% endblock %}

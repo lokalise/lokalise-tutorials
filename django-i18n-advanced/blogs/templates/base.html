@@ -1,0 +1,51 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{% get_current_language as current_language %}{{ current_language }}"
+  dir="{% get_current_language_bidi as bidi_direction %}{% if bidi_direction %}rtl{% else %}ltr{% endif %}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Django App</title>
+  <style>
+    body:dir(rtl) {
+      direction: rtl;
+      text-align: right;
+    }
+
+    body:dir(ltr) {
+      direction: ltr;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>My Django App</h1>
+      {% block language_switcher %}
+      <form method="post" action="{% url 'set_language' %}">
+        {% csrf_token %}
+        <label for="language-select">{% trans "Choose your language" %}:</label>
+        {% get_current_language as current_language %}
+        {% load language_tags %}
+        <select id="language-select" name="language">
+          {% get_current_language as current_language %}
+          {% get_languages as languages %}
+          {% for code, name in languages %}
+          <option value="{{ code }}" {% if current_language == code %}selected{% endif %}>{{ name }}</option>
+          {% endfor %}
+        </select>
+        <button type="submit">{% trans "Switch" %}</button>
+      </form>
+      {% endblock %}
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+
+</html>
