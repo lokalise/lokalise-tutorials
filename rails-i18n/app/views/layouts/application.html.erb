@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head lang="<%= I18n.locale %>">
+<html lang="<%= I18n.locale %>">
+  <head>
     <meta charset="utf-8">
-    <title>LokaliseI18n</title>
+    <title><%= content_for(:title) || "Lokalise I18n" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><%= link_to t('global.menu.home'), root_path %></li>
-        <li><%= link_to t('global.menu.feedback'), new_feedback_path %></li>
-      </ul>
+  <nav>
+    <ul>
+      <li><%= link_to t('global.menu.home'), root_path %></li>
+      <li><%= link_to t('global.menu.feedback'), new_feedback_path %></li>
+    </ul>
 
-      <ul>
-        <% I18n.available_locales.each do |locale| %>
-          <li>
-            <% if I18n.locale == locale %>
-              <%= t(locale, scope: 'locales') %>
-            <% else %>
-              <%= link_to t(locale, scope: 'locales'), url_for(locale: locale) %>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-    </nav>
-
-    <%= yield %>
+    <ul>
+      <% I18n.available_locales.each do |locale| %>
+        <li>
+          <% if I18n.locale == locale %>
+            <%= t(locale, scope: 'locales') %>
+          <% else %>
+            <%= link_to t(locale, scope: 'locales'), url_for(locale: locale) %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+  <%= yield %>
   </body>
 </html>

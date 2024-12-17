@@ -1,4 +1,4 @@
-class CreateFeedbacks < ActiveRecord::Migration[7.0]
+class CreateFeedbacks < ActiveRecord::Migration[8.0]
   def change
     create_table :feedbacks do |t|
       t.string :author
