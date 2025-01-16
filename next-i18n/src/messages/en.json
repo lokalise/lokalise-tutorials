@@ -1,0 +1,16 @@
+{
+  "title": "Homepage",
+  "description": "Tutorial presented by {company}",
+  "currentTime": "Current date and time: {time}",
+  "dashboard": {
+    "title": "Dashboard",
+    "projects": "You have {count, plural, =0 {no projects} =1 {<b>one</b> project} other {<b>#</b> projects}}."
+  },
+  "markdown": {
+    "title": "Markdown"
+  },
+  "notFound": {
+    "title": "Not found (404)",
+    "description": "This page cannot be found!"
+  }
+}

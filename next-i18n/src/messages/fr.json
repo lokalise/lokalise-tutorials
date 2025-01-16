@@ -1,0 +1,16 @@
+{
+  "title": "Page d'accueil",
+  "description": "Tutoriel présenté par {company}",
+  "currentTime": "Date et heure actuelles : {time}",
+  "dashboard": {
+    "title": "Tableau de bord",
+    "projects": "Vous avez {count, plural, =0 {aucun projet} =1 {<b>un</b> projet} other {<b>#</b> projets}}."
+  },
+  "markdown": {
+    "title": "Markdown"
+  },
+  "notFound": {
+    "title": "Non trouvé (404)",
+    "description": "Cette page est introuvable!"
+  }
+}
