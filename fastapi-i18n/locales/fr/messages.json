@@ -1,0 +1,7 @@
+{
+  "greeting": "Bonjour, le monde!",
+  "messages": {
+    "one": "Vous avez {count} nouveau message",
+    "other": "Vous avez {count} nouveaux messages"
+  }
+}
