@@ -1,0 +1,12 @@
+{
+	"save": "Save Changes",
+  "cancel": "Cancel",
+  "loading": "Loading...",
+  "error_generic": "Something went wrong. Please try again.",
+  "success_saved": "Changes saved successfully!",
+  "no_data": "Nothing to show here yet.",
+  "search": "Search...",
+  "confirm_delete": "Are you sure you want to delete this?",
+  "yes": "Yes",
+  "no": "No"
+}

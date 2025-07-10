@@ -1,0 +1,27 @@
+{
+	"name": "ai-translations",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "tsup",
+		"start": "npm run build && node dist/index.js",
+		"lint": "npx @biomejs/biome check ./",
+		"lint:fix": "npx @biomejs/biome check --write ./",
+		"lint:fix:unsafe": "npx @biomejs/biome check --write --unsafe ./"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"@lokalise/node-api": "^14.9.1",
+		"fastify": "^5.4.0",
+		"lokalise-file-exchange": "^3.1.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.1.0",
+		"@types/node": "^24.0.7",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3"
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "cancel": "Annuler",
+  "confirm_delete": "Es-tu sûr(e) de vouloir supprimer ceci ?",
+  "error_generic": "Un problème est survenu. Veuillez réessayer.",
+  "loading": "Chargement...",
+  "no": "Non",
+  "no_data": "Rien à afficher ici pour l'instant.",
+  "save": "Enregistrer les modifications",
+  "search": "Rechercher...",
+  "success_saved": "Modifications enregistrées avec succès !",
+  "yes": "Oui"
+}
