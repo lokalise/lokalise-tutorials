@@ -1,5 +1,7 @@
 # Lokalise AI tasks: API demo
 
+Blog post: https://lokalise.com/blog/building-an-ai-powered-translation-flow-using-lokalise-api-and-webhooks/
+
 To test drive this, you'll need a Lokalise project, an API token, and a webhook with "task closed" trigger.
 
 Create an `.env` file in the root:
