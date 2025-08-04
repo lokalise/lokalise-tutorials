@@ -1,0 +1,6 @@
+{
+  "title": "Hello from {name}",
+  "subtitle": "This is a translation loaded from Supabase",
+  "button": "Click me",
+  "counter": "You clicked {count, plural, one {# time} other {# times}}"
+}

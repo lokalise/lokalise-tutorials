@@ -1,0 +1,25 @@
+{
+  "name": "lokalise-vercel-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@lokalise/node-api": "^15.0.0",
+    "@supabase/supabase-js": "^2.53.0",
+    "intl-messageformat": "^10.7.16",
+    "lokalise-file-exchange": "^4.0.0",
+    "next": "15.4.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.9.2"
+  }
+}
