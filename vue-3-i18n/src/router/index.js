@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory, RouterView } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Tr from "@/i18n/translation"
+import I18nManager from '@/i18n/manager'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.VITE_BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/:locale?",
       component: RouterView,
-      beforeEnter: Tr.routeMiddleware,
+      beforeEnter: I18nManager.routeMiddleware.bind(I18nManager),
       children: [
         {
           path: '',

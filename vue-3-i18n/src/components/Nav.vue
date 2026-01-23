@@ -2,11 +2,11 @@
   <nav>
     <ul>
       <li>
-        <RouterLink :to="Tr.i18nRoute({ name: 'home' })">{{ $t("nav.home") }}</RouterLink>
+        <RouterLink :to="I18nManager.i18nRoute({ name: 'home' })">{{ t("nav.home") }}</RouterLink>
       </li>
-      
+
       <li>
-        <RouterLink :to="Tr.i18nRoute({ name: 'about' })">{{ $t("nav.about") }}</RouterLink>
+        <RouterLink :to="I18nManager.i18nRoute({ name: 'about' })">{{ t("nav.about") }}</RouterLink>
       </li>
     </ul>
   </nav>
@@ -14,14 +14,10 @@
   <LanguageSwitcher></LanguageSwitcher>
 </template>
 
-<script>
-  import LanguageSwitcher from "@/components/LanguageSwitcher.vue"
-  import Tr from "@/i18n/translation"
+<script setup>
+import { useI18n } from "vue-i18n";
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
+import I18nManager from "@/i18n/manager"
 
-  export default {
-    components: { LanguageSwitcher },
-    setup() {
-      return { Tr }
-    }
-  }
+const { t } = useI18n();
 </script>

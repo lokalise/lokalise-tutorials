@@ -1,43 +1,46 @@
 <template>
-  <select @change="switchLanguage">
+  <select :value="locale" @change="switchLanguage($event.target.value)">
     <option
-      v-for="sLocale in supportedLocales"
-      :key="`locale-${sLocale}`"
-      :value="sLocale"
-      :selected="locale === sLocale"
+      v-for="code in supportedLocales"
+      :key="`locale-${code}`"
+      :value="code"
     >
-      {{ t(`locale.${sLocale}`) }}
+      {{ t(`locale.${code}`) }}
     </option>
   </select>
 </template>
 
-<script>
-  import { useI18n } from 'vue-i18n'
-  import { useRouter } from "vue-router"
-  import Tr from "@/i18n/translation"
+<script setup>
+import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
+import I18nManager from "@/i18n/manager";
 
-  export default {
-    setup() {
-      const { t, locale } = useI18n()
+const { t, locale } = useI18n();
 
-      const supportedLocales = Tr.supportedLocales
+const supportedLocales = I18nManager.supportedLocales;
 
-      const router = useRouter()
+const router = useRouter();
 
-      const switchLanguage = async (event) => {
-        const newLocale = event.target.value
+const switchLanguage = async (newLocale) => {
+  const resolved = I18nManager.resolveLocale(newLocale);
 
-        await Tr.switchLanguage(newLocale)
-
-        try {
-          await router.replace({ params: { locale: newLocale } })
-        } catch(e) {
-          console.log(e)
-          router.push("/")
-        }
-      }
-
-      return { t, locale, supportedLocales, switchLanguage }
-    }
+  if (!resolved) {
+    console.warn("Unsupported locale:", newLocale);
+    return;
   }
+
+  if (resolved === I18nManager.currentLocale) return;
+
+  await I18nManager.setLocale(resolved);
+
+  await router.replace({
+    name: router.currentRoute.value.name,
+    params: {
+      ...router.currentRoute.value.params,
+      locale: resolved,
+    },
+    query: router.currentRoute.value.query,
+    hash: router.currentRoute.value.hash,
+  });
+};
 </script>

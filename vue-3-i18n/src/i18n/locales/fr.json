@@ -1,0 +1,20 @@
+{
+  "about": {
+    "donations": "Dons collectés : {donations}",
+    "header": "À propos de nous"
+  },
+  "home": {
+    "created_by": "Ce tutoriel vous a été présenté par {company}.",
+    "header": "Bienvenue dans le tutoriel Vue 3 I18n !",
+    "num_visits": "Cette page n'a pas été visitée :( | Cette page a été visitée {n} fois | Cette page a été visitée {n} fois"
+  },
+  "locale": {
+    "en": "Anglais",
+    "fr": "Français",
+    "lv": "Letton"
+  },
+  "nav": {
+    "about": "À propos",
+    "home": "Accueil"
+  }
+}

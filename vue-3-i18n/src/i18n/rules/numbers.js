@@ -5,10 +5,16 @@ export default {
       currency: "USD"
     }
   },
-  ru: {
+  lv: {
     currencyFormat: {
       style: "currency",
-      currency: "RUB"
+      currency: "EUR"
+    }
+  },
+  fr: {
+    currencyFormat: {
+      style: "currency",
+      currency: "EUR"
     }
   }
 }

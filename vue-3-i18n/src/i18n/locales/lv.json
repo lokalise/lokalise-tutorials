@@ -1,0 +1,20 @@
+{
+  "about": {
+    "donations": "Ziedojumu savākts: {donations}",
+    "header": "Par mums"
+  },
+  "home": {
+    "created_by": "Šo ceļvedi jums sagatavoja {company}.",
+    "header": "Laipni lūdzam Vue 3 I18n ceļvedī!",
+    "num_visits": "Šī lapa vēl nav apmeklēta :( | Šī lapa ir apmeklēta {n} reizi | Šī lapa ir apmeklēta {n} reizes"
+  },
+  "locale": {
+    "en": "Angļu",
+    "fr": "Franču",
+    "lv": "Latviešu"
+  },
+  "nav": {
+    "about": "Par mums",
+    "home": "Sākums"
+  }
+}

@@ -8,7 +8,7 @@ export default {
       weekday: 'short', hour: 'numeric', minute: 'numeric'
     }
   },
-  ru: {
+  lv: {
     shortFormat: {
       dateStyle: "short"
     },
@@ -16,5 +16,18 @@ export default {
       year: 'numeric', month: 'short', day: 'numeric',
       weekday: 'short', hour: 'numeric', minute: 'numeric'
     }
-  }
+  },
+  fr: {
+    shortFormat: {
+      dateStyle: "short"
+    },
+    longFormat: {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      weekday: "short",
+      hour: "numeric",
+      minute: "numeric"
+    }
+  },
 }
