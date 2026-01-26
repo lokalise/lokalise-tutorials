@@ -1,17 +1,36 @@
 {
   "hosting": {
-    "target": "i18n-angular-lokalise",
-    "public": "dist/i18n-angular-lokalise",
+    "public": "dist/i18n-angular-lokalise/browser",
     "ignore": [
-      "**/.*"
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ],
     "headers": [
       {
-        "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
+        "source": "**/*.js",
         "headers": [
           {
             "key": "Cache-Control",
             "value": "public,max-age=31536000,immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.css",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=31536000,immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/index.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
           }
         ]
       },
@@ -27,12 +46,20 @@
     ],
     "rewrites": [
       {
+        "source": "/en-US",
+        "destination": "/en-US/index.html"
+      },
+      {
         "source": "/en-US/**",
         "destination": "/en-US/index.html"
       },
       {
-        "source": "/ru/**",
-        "destination": "/ru/index.html"
+        "source": "/lv",
+        "destination": "/lv/index.html"
+      },
+      {
+        "source": "/lv/**",
+        "destination": "/lv/index.html"
       }
     ],
     "redirects": [

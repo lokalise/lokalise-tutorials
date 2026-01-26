@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="ng2.template" datatype="plaintext" xml:space="preserve" source-language="en-US" target-language="en-US">
+    <header>
+      <tool tool-id="lokalise.com" tool-name="Lokalise"></tool>
+    </header>
+    <body>
+      <trans-unit id="324706692010051697" datatype="html">
+        <source>{VAR_PLURAL, plural, one {one task} other {<x id="INTERPOLATION"/> tasks}}</source>
+        <target>{VAR_PLURAL, plural, one {one task} other {<x id="INTERPOLATION"/> tasks}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="326281569793279925" datatype="html">
+        <source>Main page</source>
+        <target>Main page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="942937716535918063" datatype="html">
+        <source>{VAR_SELECT, select, 0 {male} 1 {female} other {other answer}}</source>
+        <target>{VAR_SELECT, select, 0 {male} 1 {female} other {other answer}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <target>About</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2380939390102386148" datatype="html">
+        <source> <x id="ICU" equiv-text="{tasksCount, plural, zero {no tasks} one {one task} other {{tasksCount} tasks}}" xid="9057336704109090456"/>\n</source>
+        <target> <x id="ICU" equiv-text="{tasksCount, plural, zero {no tasks} one {one task} other {{tasksCount} tasks}}" xid="9057336704109090456"/>\n</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3990133897753911565" datatype="html">
+        <source>Created by <x id="PH" equiv-text="this.company"/></source>
+        <target>Created by <x id="PH" equiv-text="this.company"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4005682646458942593" datatype="html">
+        <source>Copyright 2026</source>
+        <target>Copyright 2026</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5485045432871737355" datatype="html">
+        <source> Gender: <x id="ICU" equiv-text="{genderCode, select, 0 {male} 1 {female} other {other answer}}" xid="942937716535918063"/>\n</source>
+        <target> Gender: <x id="ICU" equiv-text="{genderCode, select, 0 {male} 1 {female} other {other answer}}" xid="942937716535918063"/>\n</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5736481176444461852" datatype="html">
+        <source>About Us</source>
+        <target>About Us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6709320430327029754" datatype="html">
+        <source>My Portfolio</source>
+        <target>My Portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8336405567663867706" datatype="html">
+        <source>/en-US/portfolio</source>
+        <target>/en-US/portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9201103587777813545" datatype="html">
+        <source>Portfolio</source>
+        <target>Portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcome" datatype="html">
+        <source>Hello everyone!</source>
+        <target>Hello everyone!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">1,4</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">main header</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

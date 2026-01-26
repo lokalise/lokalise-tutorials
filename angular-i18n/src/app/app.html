@@ -1,0 +1,21 @@
+<ul>
+  @for (locale of localesList; track locale.code) {
+    <li>
+      @if (locale.code === currentLocale) {
+        <span>{{ locale.label }}</span>
+      } @else {
+        <a href="/{{ locale.code }}">{{ locale.label }}</a>
+      }
+    </li>
+  }
+</ul>
+
+<nav>
+  <a class="button" routerLink="/home" i18n>Home</a> |
+  <a class="button" routerLink="/about" i18n>About</a>
+</nav>
+
+<p>{{currentLocale}}</p>
+<h1 i18n>Main page</h1>
+
+<router-outlet />

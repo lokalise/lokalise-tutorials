@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "packageManager": "npm"
+  },
   "newProjectRoot": "projects",
   "projects": {
     "i18n-angular-lokalise": {
@@ -12,115 +15,78 @@
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
-          "ru": {
-            "translation": "src/locale/messages.ru.xlf"
+          "lv": {
+            "translation": "src/locale/messages.lv.xlf"
           }
         }
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular/build:application",
           "options": {
             "localize": true,
             "i18nMissingTranslation": "error",
-            "outputPath": "dist/i18n-angular-lokalise",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           },
           "configurations": {
-            "ru": {
-              "localize": [
-                "ru"
-              ]
-            },
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+              "sourceMap": true
+            },
+            "lv": {
+              "localize": [
+                "lv"
+              ]
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
-            "ru": {
-              "browserTarget": "i18n-angular-lokalise:build:development,ru"
-            },
             "production": {
-              "browserTarget": "i18n-angular-lokalise:build:production"
+              "buildTarget": "i18n-angular-lokalise:build:production"
             },
             "development": {
-              "browserTarget": "i18n-angular-lokalise:build:development"
+              "buildTarget": "i18n-angular-lokalise:build:development"
+            },
+            "lv": {
+              "buildTarget": "i18n-angular-lokalise:build:development,lv"
             }
           },
           "defaultConfiguration": "development"
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "i18n-angular-lokalise:build",
-            "format": "xlf",
-            "outputPath": "src/locale"
-          }
-        },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {
-            "prerender": false,
-            "ssr": false,
-            "browserTarget": "i18n-angular-lokalise:build:production",
-            "firebaseProject": "lokalise-i18n-angular15",
-            "firebaseHostingSite": "lokalise-i18n-angular15"
-          }
+          "builder": "@angular/build:unit-test"
         }
       }
     }
