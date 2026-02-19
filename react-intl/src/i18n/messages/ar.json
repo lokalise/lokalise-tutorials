@@ -1,0 +1,8 @@
+{
+  "app.title": "عرض React-intl",
+  "app.description": "هذا مثال بسيط يوضح كيفية تعريب تطبيق React باستخدام react-intl.",
+  "app.notifications": "{count, plural, =0 {لا توجد إشعارات جديدة} one {لديك إشعار جديد واحد} other {لديك # إشعارات جديدة}}",
+  "app.lastLogin": "آخر تسجيل دخول: {ts, date, medium} في {ts, time, short}",
+  "app.cartTotal": "إجمالي السلة: {total, number, ::currency/AED}",
+  "app.userAction": "{gender, select, female {{name} قامت بتسجيل الدخول وقامت بتحديث ملفها.} male {{name} قام بتسجيل الدخول وقام بتحديث ملفه.} other {{name} قام/قامت بتسجيل الدخول وقام/قامت بتحديث ملفه/ملفها.}}"
+}

@@ -1,0 +1,8 @@
+{
+  "app.title": "Démo React-intl",
+  "app.description": "Cet exemple montre comment localiser une application React avec react-intl.",
+  "app.notifications": "{count, plural, =0 {Vous n'avez aucune nouvelle notification} one {Vous avez # nouvelle notification} other {Vous avez # nouvelles notifications}}",
+  "app.lastLogin": "Dernière connexion : {ts, date, medium} à {ts, time, short}",
+  "app.cartTotal": "Total du panier : {total, number, ::currency/EUR}",
+  "app.userAction": "{gender, select, female {{name} s'est connectée et a mis à jour son profil.} male {{name} s'est connecté et a mis à jour son profil.} other {{name} s'est connecté·e et a mis à jour son profil.}}"
+}
