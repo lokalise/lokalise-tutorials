@@ -1,0 +1,16 @@
+{
+  "main": {
+    "addMessage": "+1 ziņa",
+    "currentDate": "Šodien ir {{date, datetime}}",
+    "description": "Rediģē <strong>src/App.tsx</strong> un izlasi <docsLink>React i18next dokumentāciju</docsLink>.",
+    "header": "Laipni lūdzam lietotnē!",
+    "incomingMessage": "Tev ir jauna ziņa no {{from}}",
+    "messageContents": "",
+    "messageContents_female": "Viņa saka: {{body}}",
+    "messageContents_male": "Viņš saka: {{body}}",
+    "messageContents_neutral": "Viņi saka: {{body}}",
+    "newMessages_zero": "Tev ir {{count}} jaunu ziņu",
+    "newMessages_one": "Tev ir {{count}} jauna ziņa",
+    "newMessages_other": "Tev ir {{count}} jaunas ziņas"
+  }
+}

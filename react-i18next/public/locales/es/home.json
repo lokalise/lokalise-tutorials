@@ -1,0 +1,17 @@
+{
+  "main": {
+    "addMessage": "+1 mensaje",
+    "currentDate": "Hoy es {{date, datetime}}",
+    "description": "Edita <strong>src/App.tsx</strong> y lee la <docsLink>documentación de React i18next</docsLink>.",
+    "header": "¡Bienvenido a la app!",
+    "incomingMessage": "Tienes un nuevo mensaje de {{from}}",
+    "messageContents": "",
+    "messageContents_female": "Dice: {{body}}",
+    "messageContents_male": "Dice: {{body}}",
+    "messageContents_neutral": "Dice: {{body}}",
+    "newMessages_zero": "No tienes mensajes nuevos",
+    "newMessages_one": "Tienes un mensaje nuevo",
+    "newMessages_many": "",
+    "newMessages_other": "Tienes {{count}} mensajes nuevos"
+  }
+}

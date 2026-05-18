@@ -1,0 +1,18 @@
+{
+  "main": {
+    "addMessage": "+1 הודעה",
+    "currentDate": "היום {{date, datetime}}",
+    "description": "ערכו את <strong>src/App.tsx</strong> וקראו את <docsLink>התיעוד של React i18next</docsLink>.",
+    "header": "ברוכים הבאים לאפליקציה!",
+    "incomingMessage": "יש לך הודעה חדשה מ-{{from}}",
+    "messageContents": "הם אומרים: {{body}}",
+    "messageContents_female": "היא אומרת: {{body}}",
+    "messageContents_male": "הוא אומר: {{body}}",
+    "messageContents_neutral": "הם אומרים: {{body}}",
+    "newMessages_zero": "אין לך הודעות חדשות",
+    "newMessages_one": "יש לך הודעה חדשה אחת",
+    "newMessages_two": "יש לך שתי הודעות חדשות",
+    "newMessages_many": "יש לך {{count}} הודעות חדשות",
+    "newMessages_other": "יש לך {{count}} הודעות חדשות"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "dashboard": {
+    "description": "This page uses its own translation namespace.",
+    "title": "Dashboard"
+  }
+}
