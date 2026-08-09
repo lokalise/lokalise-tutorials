@@ -1,36 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:i18n_demo/app/providers/locale_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_i18n_demo/l10n/generated/l10n.dart';
 
 class LocaleSwitcherWidget extends StatelessWidget {
-  const LocaleSwitcherWidget({super.key});
+  const LocaleSwitcherWidget({super.key, required this.onLocaleChanged});
+
+  final ValueChanged<Locale> onLocaleChanged;
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<LocaleProvider>(context);
-    final locale = provider.locale;
+    final currentLocale = Localizations.localeOf(context);
 
     return DropdownButtonHideUnderline(
-      child: DropdownButton(
-        value: locale,
-        icon: Container(width: 12),
-        items: AppLocalizations.supportedLocales.map(
-          (nextLocale) {
-            return DropdownMenuItem(
-              value: nextLocale,
-              onTap: () {
-                final provider =
-                    Provider.of<LocaleProvider>(context, listen: false);
-                provider.setLocale(nextLocale);
-              },
-              child: Center(
-                child: Text(nextLocale.toString()),
-              ),
-            );
-          },
-        ).toList(),
-        onChanged: (_) {},
+      child: DropdownButton<Locale>(
+        value: currentLocale,
+        items: Lt.supportedLocales.map((locale) {
+          return DropdownMenuItem<Locale>(
+            value: locale,
+            child: Text(locale.toLanguageTag()),
+          );
+        }).toList(),
+        onChanged: (locale) {
+          if (locale != null) {
+            onLocaleChanged(locale);
+          }
+        },
       ),
     );
   }

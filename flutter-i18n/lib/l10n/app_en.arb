@@ -7,18 +7,27 @@
   "welcome": "Welcome!",
   "createdBy": "Tutorial by {company}",
   "@createdBy": {
-    "description": "Copyright message",
+    "description": "Tutorial attribution",
     "placeholders": {
       "company": {
         "type": "String",
-        "example": "Demo"
+        "example": "Lokalise"
       }
     }
   },
-  "currentLocale": "Current locale is {locale}",
+  "currentLocale": "Current locale: {locale}",
+  "@currentLocale": {
+    "description": "Currently active app locale",
+    "placeholders": {
+      "locale": {
+        "type": "String",
+        "example": "en-US"
+      }
+    }
+  },
   "currentDate": "Today is {date}",
   "@currentDate": {
-    "description": "Localized current date",
+    "description": "Displays the current date",
     "placeholders": {
       "date": {
         "type": "DateTime",
@@ -26,27 +35,27 @@
       }
     }
   },
-  "currencyDemo": "Here's a demo price: {value}",
+  "currencyDemo": "Demo price: {value}",
   "@currencyDemo": {
-    "description": "A demo showing how to localize currency",
+    "description": "Displays a localized currency value",
     "placeholders": {
       "value": {
-        "type": "int",
+        "type": "double",
         "format": "currency",
         "optionalParameters": {
+          "name": "USD",
           "decimalDigits": 2
         }
       }
     }
   },
   "pressButton": "Press the button below",
-  "buttonPressed": "{count, plural, =0{Has not pressed yet} =1{Pressed 1 time} other{Pressed {count} times}}",
+  "buttonPressed": "{count, plural, =0{Not pressed yet} one{Pressed {count} time} other{Pressed {count} times}}",
   "@buttonPressed": {
-    "description": "Shows how many times the button has been pressed (pluralized)",
+    "description": "Shows how many times the button has been pressed",
     "placeholders": {
       "count": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       }
     }
   }

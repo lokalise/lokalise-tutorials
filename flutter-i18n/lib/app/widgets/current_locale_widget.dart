@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_i18n_demo/l10n/generated/l10n.dart';
 
 class CurrentLocaleWidget extends StatelessWidget {
   const CurrentLocaleWidget({super.key});
@@ -7,10 +7,10 @@ class CurrentLocaleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final locale = Localizations.localeOf(context);
-    return Center(
-        child: Text(
-      AppLocalizations.of(context)!.currentLocale(locale.toString()),
+
+    return Text(
+      Lt.of(context).currentLocale(locale.toLanguageTag()),
       style: Theme.of(context).textTheme.headlineMedium,
-    ));
+    );
   }
 }

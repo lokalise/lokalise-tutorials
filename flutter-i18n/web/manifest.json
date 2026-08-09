@@ -1,6 +1,6 @@
 {
-    "name": "i18n_demo",
-    "short_name": "i18n_demo",
+    "name": "flutter_i18n_demo",
+    "short_name": "flutter_i18n_demo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

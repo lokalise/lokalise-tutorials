@@ -1,28 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:i18n_demo/app/pages/my_home_page.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:i18n_demo/app/providers/locale_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_i18n_demo/app/pages/my_home_page.dart';
+import 'package:flutter_i18n_demo/l10n/generated/l10n.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) => ChangeNotifierProvider(
-      create: (context) => LocaleProvider(),
-      builder: (context, child) {
-        final provider = Provider.of<LocaleProvider>(context);
+  State<MyApp> createState() => _MyAppState();
+}
 
-        return MaterialApp(
-          onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
-          supportedLocales: AppLocalizations.supportedLocales,
-          locale: provider.locale,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-          ),
-          home: const MyHomePage(),
-        );
-      });
+class _MyAppState extends State<MyApp> {
+  Locale? _locale;
+
+  void _setLocale(Locale locale) {
+    if (!Lt.supportedLocales.contains(locale)) {
+      return;
+    }
+
+    setState(() {
+      _locale = locale;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      locale: _locale,
+      onGenerateTitle: (context) => Lt.of(context).appTitle,
+      localizationsDelegates: Lt.localizationsDelegates,
+      supportedLocales: Lt.supportedLocales,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: MyHomePage(onLocaleChanged: _setLocale),
+    );
+  }
 }
